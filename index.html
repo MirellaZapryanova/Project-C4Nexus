@@ -1,0 +1,413 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <nav class="navbar"></nav>
+
+    <!-- hero section-->
+    <header class="hero-section">
+        <div class="content">
+            <img src="img/light-logo.png" alt="" class="logo">
+            <p class="sub-heading">
+                Best Fashion Collection
+            </p>
+        </div>
+    </header>
+
+
+    <div class="sort-container">
+    <select id="sortingOptions" onchange="sortProducts(this.value)">
+        <option value="az">Sort by: Alphabetically A-Z</option>
+        <option value="za">Sort by: Alphabetically Z-A</option>
+        <option value="price-asc">Sort by: Price Ascending</option>
+        <option value="price-desc">Sort by: Price Descending</option>
+    </select>
+</div>
+
+    <div class="container">
+        <div class="products">
+            <div class="product men">
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="discount-tag">
+                        50% off
+                        </span>
+                        <img src="img/card1.png" class="product-thumb" alt="">
+                        <button class="card-btn">BUY <img src="img/cart.png" alt=""></button>
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-brand">GUESS</h2>
+                        <p class="product-short-des">
+                            White casual shirt...
+                        </p>
+                        <span class="price">
+                            $55
+                        </span>
+                        <span class="actual-price">
+                            $101
+                        </span>
+                    </span><br>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    </div>
+                </div>    
+            </div>
+            <div class="product men">  <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">
+                        50% off
+                    </span>
+                    <img src="img/card2.png" class="product-thumb" alt="">
+                    <button class="card-btn">BUY <img src="img/cart.png" alt=""></button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">
+                    BOSS
+                    </h2>
+                    <p class="product-short-des">
+                       White elegant pants...
+                    </p>
+                    <span class="price">
+                        $40
+                    </span>
+                    <span class="actual-price">
+                        $80
+                    </span>
+                </span><br>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                </div>
+            </div></div>
+            <div class="product women">  <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">
+                        50% off
+                    </span>
+                    <img src="img/card4.png" class="product-thumb" alt="">
+                    <button class="card-btn">BUY <img src="img/cart.png" alt=""></button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">
+                        ZARA
+                    </h2>
+                    <p class="product-short-des">
+                        Floral dress...
+                    </p>
+                    <span class="price">
+                        $45
+                    </span>
+                    <span class="actual-price">
+                        $90
+                    </span>
+                </span><br>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                </div>
+            </div></div>
+            <div class="product accessories">  <div class="product-card">
+                <div class="product-image">
+                    <img src="img/card5.png" class="product-thumb" alt="">
+                    <button class="card-btn">BUY <img src="img/cart.png" alt=""></button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">
+                        ZARA
+                    </h2>
+                    <p class="product-short-des">
+                       Mini bag...
+                    </p>
+                    <span class="price">
+                        $39
+                    </span>
+                    
+                </span><br>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                </div>
+            </div></div>
+            <div class="product men">  
+                <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">
+                        50% off
+                    </span>
+                    <img src="img/card3.png" class="product-thumb" alt="">
+                    <button class="card-btn">BUY <img src="img/cart.png" alt=""></button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">
+                        brand
+                    </h2>
+                    <p class="product-short-des">
+                        short description...
+                    </p>
+                    <span class="price">
+                        $20
+                    </span>
+                    <span class="actual-price">
+                        $40
+                    </span>
+                </span><br>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                </div>
+            </div></div>
+            <div class="product women">  
+                <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">
+                        50% off
+                    </span>
+                    <img src="img/card6.png" class="product-thumb" alt="">
+                    <button class="card-btn">BUY <img src="img/cart.png" alt=""></button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">
+                        BERSHKA
+                    </h2>
+                    <p class="product-short-des">
+                        Long casual skirt...
+                    </p>
+                    <span class="price">
+                        $20
+                    </span>
+                    <span class="actual-price">
+                        $40
+                    </span>
+                </span><br>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                </div>
+            </div></div>
+            <div class="product accessories"> 
+                <div class="product-card">
+                
+                <div class="product-image">
+                    <span class="discount-tag">
+                        40% off
+                    </span>
+                    <img src="img/card7.png" class="product-thumb" alt="">
+                    <button class="card-btn">BUY <img src="img/cart.png" alt=""></button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">
+                        RayBan
+                    </h2>
+                    <p class="product-short-des">
+                        Top sunglasses...
+                    </p>
+                    <span class="price">
+                        $320
+                    </span>
+                    <span class="actual-price">
+                        $400
+                    </span>
+                </span><br>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                </div>
+            </div></div>
+            <div class="product women">
+                 <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">
+                        50% off
+                    </span>
+                    <img src="img/card8.png" class="product-thumb" alt="">
+                    <button class="card-btn">BUY <img src="img/cart.png" alt=""></button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">
+                        ZARA
+                    </h2>
+                    <p class="product-short-des">
+                       Baby blue casual shirt...
+                    </p>
+                    <span class="price">
+                        $40
+                    </span>
+                    <span class="actual-price">
+                        $80
+                    </span>
+                </span><br>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                </div>
+            </div>
+        </div>
+        <div class="product men">  
+            <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">
+                    50% off
+                </span>
+                <img src="img/card3.png" class="product-thumb" alt="">
+                <button class="card-btn">BUY <img src="img/cart.png" alt=""></button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">
+                    brand
+                </h2>
+                <p class="product-short-des">
+                    short description...
+                </p>
+                <span class="price">
+                    $20
+                </span>
+                <span class="actual-price">
+                    $40
+                </span>
+            </span><br>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            </div>
+        </div></div>
+        <div class="product women">  
+            <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">
+                    50% off
+                </span>
+                <img src="img/card6.png" class="product-thumb" alt="">
+                <button class="card-btn">BUY <img src="img/cart.png" alt=""></button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">
+                    BERSHKA
+                </h2>
+                <p class="product-short-des">
+                    Long casual skirt...
+                </p>
+                <span class="price">
+                    $20
+                </span>
+                <span class="actual-price">
+                    $40
+                </span>
+            </span><br>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            </div>
+        </div></div>
+        <div class="product accessories"> 
+            <div class="product-card">
+            
+            <div class="product-image">
+                <span class="discount-tag">
+                    40% off
+                </span>
+                <img src="img/card7.png" class="product-thumb" alt="">
+                <button class="card-btn">BUY <img src="img/cart.png" alt=""></button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">
+                    RayBan
+                </h2>
+                <p class="product-short-des">
+                    Top sunglasses...
+                </p>
+                <span class="price">
+                    $320
+                </span>
+                <span class="actual-price">
+                    $400
+                </span>
+            </span><br>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            </div>
+        </div></div>
+        <div class="product women">
+             <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">
+                    50% off
+                </span>
+                <img src="img/card8.png" class="product-thumb" alt="">
+                <button class="card-btn">BUY <img src="img/cart.png" alt=""></button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">
+                    ZARA
+                </h2>
+                <p class="product-short-des">
+                   Baby blue casual shirt...
+                </p>
+                <span class="price">
+                    $40
+                </span>
+                <span class="actual-price">
+                    $80
+                </span>
+            </span><br>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            </div>
+        </div>
+    </div>
+    </div>
+   
+</div>
+<div id="card-container">
+</div>
+<div class="card-actions">
+    <span>Showing 
+        <span id="card-count"></span> of 
+        <span id="card-total"></span> cards      
+      </span><br>
+  <button id="load-more">Load more</button>
+
+</div>     
+ 
+    <footer>
+    </footer>
+
+    <script src="js/nav.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>
